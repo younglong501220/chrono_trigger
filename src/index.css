@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* SNES Classic Window Box */
+  .snes-window {
+    background: linear-gradient(180deg, #0f2b5c 0%, #081533 100%);
+    border: 3px solid #e2e8f0;
+    box-shadow: 
+      inset 0 0 0 2px #1e3a8a,
+      0 8px 24px -4px rgba(0, 0, 0, 0.7);
+    border-radius: 6px;
+  }
+
+  .snes-window-gold {
+    background: linear-gradient(180deg, #18223c 0%, #0d1322 100%);
+    border: 3px solid #f59e0b;
+    box-shadow: 
+      inset 0 0 0 2px #78350f,
+      0 8px 24px -4px rgba(0, 0, 0, 0.8);
+    border-radius: 6px;
+  }
+
+  .font-pixel {
+    font-family: 'Press Start 2P', monospace;
+  }
+
+  .font-serif-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+
+  .font-sans-tc {
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+}
+
+/* Retro CRT Scanlines effect (optional toggle) */
+.scanlines-overlay {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.03),
+    rgba(0, 255, 0, 0.01),
+    rgba(0, 0, 255, 0.03)
+  );
+  background-size: 100% 4px, 6px 100%;
+  pointer-events: none;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(147, 51, 234, 0.9);
+  }
+}
+
+.gate-glow {
+  animation: pulseGlow 2.8s infinite ease-in-out;
+}

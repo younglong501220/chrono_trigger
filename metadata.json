@@ -1,0 +1,6 @@
+{
+  "name": "時空之輪：因果迴廊 (Chrono Nexus)",
+  "description": "致敬 1995 經典 JRPG 傳奇的時空冒險遊戲，融合 5 大時代穿梭、經典 ATB 即時戰鬥與連攜合體技、因果蝴蝶效應與多重歷史分歧。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
